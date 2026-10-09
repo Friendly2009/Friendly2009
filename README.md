@@ -1,14 +1,89 @@
-# 💻 Tech Stack:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) 
-![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=cs-harp&logoColor=white) 
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) 
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) 
-![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white) 
-![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) 
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) 
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) 
-![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white) 
-![Kotlin](https://img.shields.io/badge/Kotlin-303030.svg?style=for-the-badge&logo=kotlin&logoColor=purple)
-![React](https://img.shields.io/badge/React-303030.svg?style=for-the-badge&logo=react&logoColor=white)
-![React](https://img.shields.io/badge/TypeScript-FFFFFF.svg?style=for-the-badge&logo=typescript&logoColor=blue)
+# Friendly2009
 
+**Разработчик веб-приложений на TypeScript и C#**
+
+[GitHub-профиль](https://github.com/Friendly2009)
+
+## Обо мне
+
+Разрабатываю веб-приложения на TypeScript и C#, с акцентом на внутренние системы и работу с данными. Мой основной проект — собственная CRM для образовательного учреждения: интерфейс на React, сервер на Express и база MySQL. Моя сильная сторона — связывать пользовательский сценарий, API и хранение данных в одном приложении.
+
+Около 2 лет практики C#. Основной опыт получен в собственных и учебных проектах. Сейчас развиваю навыки ИИ-интеграций через прототип помощника для работы с кодовой базой CRM.
+
+## Технологии и практика
+
+| Технологии | Практика | Подтверждение |
+| --- | --- | --- |
+| TypeScript · React · Express | Основной веб-стек: компоненты, формы, API, контроллеры и сессии. | SoftSkills-CRM: frontend и backend. |
+| C# · ASP.NET Core · WinForms | Около 2 лет практики: веб-приложения, контроллеры, desktop-интерфейс и алгоритмы. | MyLessons, numeralConvert; срок — по описанию опыта. |
+| MySQL | Связанные таблицы, SQL-запросы, транзакции и аналитические представления. | Схема и контроллеры CRM; EF Core / MySQL в MyLessons. |
+| Tailwind CSS | Стилизация React-интерфейса; в проекте также применяются CSS Modules. | Зависимости, конфигурация и стили CRM. |
+| Nginx · Ubuntu | Базовая практика размещения веб-приложений; собственный Ubuntu-сервер. | Nginx в инструкции публикации CRM; сервер — по описанию опыта. |
+| Python | Базовая прикладная практика: Telegram-бот поддержки, асинхронные обработчики и MySQL. | Модуль backend/bot/main.py в CRM: aiogram и aiomysql. |
+
+## Избранные проекты
+
+### [SoftSkills-CRM](https://github.com/Friendly2009/SoftSkills-CRM)
+
+Основной проект · CRM для образовательного учреждения
+
+**Стек:** TypeScript · React · Express · MySQL · Tailwind CSS
+
+Система для учёта клиентов, сотрудников, групп и занятий. В публичном коде есть лиды с Kanban, посещаемость, балансы, финансовые операции и аналитические панели.
+
+**Мой вклад.** Разрабатываю frontend и backend собственной CRM. В истории Friendly2009 подтверждены API клиентов, CRUD клиентов и групп, валидация времени занятий и отображение ближайшего занятия. У проекта есть другие участники; отдельные доработки выполнены совместно.
+
+**Техническая сложность.** Это наиболее сложный проект в портфолио: несколько связанных предметных областей, операции с БД в транзакциях, привязка данных к компании и проверки прав. Например, закрытие занятия связывает посещаемость, списания с балансов и начисление преподавателю; повторное закрытие требует пересчёта проводок.
+
+**Статус.** Развиваемый проект с опубликованным исходным кодом и инструкцией запуска. Наличие модулей подтверждено кодом; масштаб коммерческой эксплуатации не заявляется.
+
+**Код и подтверждение:** [Код CRM](https://github.com/Friendly2009/SoftSkills-CRM/tree/9df49fd32d77dc9293a948da78581c4b5566b312) · [Мой CRUD-вклад](https://github.com/Friendly2009/SoftSkills-CRM/commit/3d39d31c) · [Валидация времени](https://github.com/Friendly2009/SoftSkills-CRM/commit/2a9cef0b) · [Участники](https://github.com/Friendly2009/SoftSkills-CRM/graphs/contributors)
+
+### [AI Engineering Agent](https://github.com/Friendly2009/SoftSkills-CRM/tree/AI-Agent/ai-agent)
+
+Модуль CRM · CLI-прототип в ветке AI-Agent
+
+**Стек:** TypeScript · Google GenAI · Node.js · mysql2
+
+Помощник для изучения и сопровождения кода CRM. Запрос передаётся модели, модель выбирает инструмент, результат выполнения возвращается в следующий шаг диалога.
+
+**Мой вклад.** Разрабатываю цикл вызова инструментов, их схемы и функции поиска кода, чтения файлов, просмотра структуры и поиска ссылок на символы. В отдельных модулях также есть работа с SQL, создание файлов и запуск команд проверки.
+
+**Техническая сложность.** Связать ответы модели с локальными инструментами, обработать ошибки и ограничить файловые и SQL-операции. Это практика интеграции LLM с программой и её контекстом.
+
+**Статус.** Прототип в разработке. В опубликованной точке входа editFile, runTypeCheck и inspectGit пока вызывают заглушки; полная готовность этих команд и автономная эксплуатация не заявляются.
+
+**Код и подтверждение:** [Точка входа](https://github.com/Friendly2009/SoftSkills-CRM/blob/2a82c3594c026e301eb76df1f1bcea1bb4eabd9f/ai-agent/src/index.ts) · [Модули инструментов](https://github.com/Friendly2009/SoftSkills-CRM/tree/2a82c3594c026e301eb76df1f1bcea1bb4eabd9f/ai-agent/src/tools)
+### [MyLessons / MyLesson](https://github.com/Friendly2009/MyLessons)
+
+Веб-приложение для планирования школьных занятий
+
+**Стек:** C# · ASP.NET Core MVC · Razor · EF Core · MySQL · JavaScript · Bootstrap
+
+Приложение для работы с расписанием, классами, преподавателями и предметами. Есть формы регистрации и входа, панель управления и таблица занятий.
+
+**Мой вклад.** Реализовал серверные контроллеры, добавление и удаление занятий и преподавателей, фильтрацию по классу, сохранение изменений и передачу данных в Razor-представления. Для хранения используется EF Core / MySQL; часть данных расписания сериализуется в JSON.
+
+**Техническая сложность.** Связать формы и таблицу расписания с серверной логикой и состоянием пользователя. Проект показывает практику разработки веб-приложения на C# с сохранением и преобразованием данных.
+
+**Статус.** Самостоятельный учебный проект. Готовые библиотеки оформления используются вместе с собственной логикой приложения.
+
+**Код и подтверждение:** [Контроллер расписания](https://github.com/Friendly2009/MyLessons/blob/257425a94ff60cf21f71554df947cca4c62dacc3/MyLessons/Controllers/MainController.cs)
+
+### [numeralConvert](https://github.com/Friendly2009/numeralConvert)
+
+Desktop-конвертер систем счисления
+
+**Стек:** C# · Windows Forms · System.Numerics.BigInteger
+
+Небольшое Windows-приложение для перевода целых неотрицательных чисел между системами счисления.
+
+**Мой вклад.** Реализовал преобразование числа через BigInteger, форму выбора оснований и проверку допустимости цифр. В репозитории есть опубликованный установочный экземпляр.
+
+**Техническая сложность.** Сосредоточенная алгоритмическая задача: обработка чисел за пределами стандартных целочисленных типов и связь вычислений с интерфейсом. Это компактный пример прикладного C#.
+
+**Код и подтверждение:** [Алгоритм преобразования](https://github.com/Friendly2009/numeralConvert/blob/a8ee308952308461c32dcd5932f4e54f3ccae216/WindowsFormsApp1/Converter.cs)
+
+## Чем могу быть полезен
+
+Могу быть полезен в разработке небольших внутренних веб-приложений, CRUD-модулей и интерфейсов на React, API на Express или ASP.NET Core, интеграции с MySQL и доработке существующих систем. ИИ-интеграции предлагаю начинать с прототипа для одного конкретного сценария и проверяемого результата.
